@@ -324,7 +324,7 @@ mae = mean_absolute_error(test_data['meantemp'], predictionsT)
 mse = mean_squared_error(test_data['meantemp'], predictionsT)
 rmse = np.sqrt(mse)  
 
-# Print the results
+
 print(f"R² Score: {r2:.4f}")
 print(f"Mean Absolute Error (MAE): {mae:.4f}")
 print(f"Mean Squared Error (MSE): {mse:.4f}")
@@ -362,9 +362,9 @@ print('Humidity prediction stats:')
 r2 = r2_score(test_data['humidity'], predictionsH)
 mae = mean_absolute_error(test_data['humidity'], predictionsH)
 mse = mean_squared_error(test_data['humidity'], predictionsH)
-rmse = np.sqrt(mse)  # Taking the square root of MSE
+rmse = np.sqrt(mse)  
 
-# Print the results
+
 print(f"R² Score: {r2:.4f}")
 print(f"Mean Absolute Error (MAE): {mae:.4f}")
 print(f"Mean Squared Error (MSE): {mse:.4f}")
@@ -381,9 +381,9 @@ print('Pressure prediction stats:')
 r2 = r2_score(test_data['meanpressure'], predictionsP)
 mae = mean_absolute_error(test_data['meanpressure'], predictionsP)
 mse = mean_squared_error(test_data['meanpressure'], predictionsP)
-rmse = np.sqrt(mse)  # Taking the square root of MSE
+rmse = np.sqrt(mse)  
 
-# Print the results
+
 print(f"R² Score: {r2:.4f}")
 print(f"Mean Absolute Error (MAE): {mae:.4f}")
 print(f"Mean Squared Error (MSE): {mse:.4f}")
@@ -455,7 +455,7 @@ print(f"F-critical value: {Fc}")
 
 import numpy as np
 
-# Assuming you have already fitted your model
+
 y_true = test_data['wind_speed'].values
 
 rss = 0
